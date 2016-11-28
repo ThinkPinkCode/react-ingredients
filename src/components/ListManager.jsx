@@ -5,6 +5,11 @@ var ListManager = React.createClass({
   getInitialState: function(){
     return {items: [], newItemText:''};
   },
+
+  onChange: function(e){
+    this.setState({newItemText: e.target.value});
+  },
+
   handleSubmit: function(e){
     e.preventDefault();
 
@@ -28,3 +33,5 @@ var ListManager = React.createClass({
     )
   }
 });
+
+module.exports = ListManager;
