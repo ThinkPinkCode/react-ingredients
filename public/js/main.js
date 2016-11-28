@@ -20473,8 +20473,8 @@ module.exports = List;
 
 },{"./ListItem.jsx":179,"react":177}],179:[function(require,module,exports){
 var React = require('react');
-var List = React.createClass({
-  displayName: 'List',
+var ListItem = React.createClass({
+  displayName: 'ListItem',
 
   render: function () {
     return React.createElement(
