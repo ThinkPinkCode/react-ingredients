@@ -23,11 +23,11 @@ var ListManager = React.createClass({
   render: function(){
 
     var divStyle = {
-
+      marginTop: 10
     }
 
     return(
-      <div className="col-sm-4">
+      <div style={divStyle} className="col-sm-4">
         <div className="panel panel-primary">
           <div className="panel-heading">
             <h3>{this.props.title}</h3>

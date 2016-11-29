@@ -20517,11 +20517,13 @@ var ListManager = React.createClass({
 
   render: function () {
 
-    var divStyle = {};
+    var divStyle = {
+      marginTop: 10
+    };
 
     return React.createElement(
       'div',
-      { className: 'col-sm-4' },
+      { style: divStyle, className: 'col-sm-4' },
       React.createElement(
         'div',
         { className: 'panel panel-primary' },
@@ -20570,5 +20572,7 @@ var ReactDOM = require('react-dom');
 var ListManager = require('./components/ListManager.jsx');
 
 ReactDOM.render(React.createElement(ListManager, { title: 'Ingredients' }), document.getElementById('ingredients'));
+ReactDOM.render(React.createElement(ListManager, { title: 'ToDo' }), document.getElementById('todo'));
+ReactDOM.render(React.createElement(ListManager, { title: 'Christmas' }), document.getElementById('christmas'));
 
 },{"./components/ListManager.jsx":180,"react":177,"react-dom":26}]},{},[181]);
